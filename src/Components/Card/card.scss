@@ -1,0 +1,46 @@
+
+
+.card{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+ width:20%;
+    height:350px;
+    text-align: center;
+    margin: 40px 2%;
+    background-color: white;
+    .image{
+width:100%;
+
+img{
+    width:100%;
+    aspect-ratio: 1/1;
+}
+    }
+.nameandbutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width:100%;
+  height:80%;
+  margin-left: 20px;
+   
+
+  >button{
+      width:90%;
+      height:30px;
+      border: 1px solid grey;
+      border-radius: 5px;
+    } 
+     
+    >button:hover{
+        background-color: green;
+        color:white;
+        border:none;
+        }
+    
+}
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Roboto&display=swap');
+
+.singlecharactercard{
+
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+width:100vw;
+height: 55vh;
+background-color: rgba(255, 255, 255, 0.527);
+font-family: 'Roboto', sans-serif;
+.name{
+    font-family: 'Dokdo', cursive;
+
+}
+
+.image{
+width:20%;
+
+>img{
+    width:100%;
+}
+
+}
+.dataitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+}
