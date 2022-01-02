@@ -10,12 +10,12 @@ class SingleCharacterCard extends React.Component {
     render() { 
         return ( 
             <div className="singlecharactercard">
-                <h2 className="name">{this.props.name}</h2>
+                <h1 className="name">{this.props.name}</h1>
                 <div className="image"><img src={this.props.image} alt={this.props.name} /></div>
              <div className="data">
-               <div className="dataitem"><b>Species:</b> {this.props.species}</div>
+               <div className="dataitem"><b>Species: </b> {this.props.species}</div>
                 <div className="dataitem"><b>Origin: </b> {this.props.origin}</div>
-                <div className="dataitem"><b>Status:</b> {this.props.status}</div>
+                <div className="dataitem"><b>Status: </b> {this.props.status}</div>
             </div>
             </div>
          );

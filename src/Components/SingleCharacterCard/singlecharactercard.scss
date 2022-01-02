@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Roboto&display=swap');
 
 .singlecharactercard{
-
+font-size: 130%;
 display:flex;
 flex-direction: column;
-justify-content: space-around;
 align-items: center;
+justify-content: space-around;
 text-align: center;
 width:100vw;
-height: 55vh;
+min-height: 60vh;
+padding-bottom: 20px;
 background-color: rgba(255, 255, 255, 0.527);
 font-family: 'Roboto', sans-serif;
 .name{
@@ -24,11 +25,30 @@ width:20%;
 }
 
 }
-.dataitem{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.data{
+
+    .dataitem{
+        padding:10px;
 }
 
+}
+
+}
+
+
+@media only screen and (max-width:768px) {
+
+
+.singlecharactercard{
+font-size: 100%;
+.image{
+    width: 50%;
+}
+
+
+
+}
+
+    
 }

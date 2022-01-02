@@ -19,15 +19,15 @@ background-position: center;
 
 }
 .pagination{
-
 margin:20px auto;
+
 
 }
 .cardwrap{
-    margin:auto 20%;
+    width:90%;
     display:flex;
     flex-direction: row;
-    align-items: center;
+justify-content: space-around;
     flex-wrap: wrap;
 
 

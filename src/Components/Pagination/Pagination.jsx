@@ -52,12 +52,12 @@ this.buttons()
         return ( <div className="pagination">
             <div className="buttons">
 <button className="change" onClick={()=>this.props.changePage(-1)}>prev</button>
-{this.state.paginationArr.map(e=> <button onClick={()=>this.props.selectPage(e)}>{e}</button>)}
+{this.state.paginationArr.map((e,i)=> <button key={i} onClick={()=>this.props.selectPage(e)}>{e}</button>)}
 <button className="change" onClick={()=>this.props.changePage(1)}>next</button>
+</div>
 <div className="buttonsagain">
   <button onClick={()=>this.props.selectPage(1)}>First page</button>
   <button onClick={()=>this.props.selectPage(42)}>Last page</button>
-</div>
 </div>
         </div> );
     }

@@ -1,7 +1,7 @@
 import React from "react";
 import Homepage from './Pages/Homepage/Homepage.jsx'
 import SinglePage from './Pages/SinglePage/SinglePage.jsx'
-
+import './app.css'
 
 
 class App extends React.Component {
@@ -48,14 +48,15 @@ selectSingleCharacter(x){
 
 this.setState({selectedChar:x})
 
-
 }
 
+
 changePage(x){
-if(this.state.currentPage>=1 && this.state.currentPage<=41)
+if(this.state.currentPage>1 && this.state.currentPage<=41)
 this.setState({currentPage: this.state.currentPage+ x})
-else
+else if(this.state.currentPage===1)
 this.setState({currentPage:1})
+else this.setState({currentPage:42})
 }
 
 

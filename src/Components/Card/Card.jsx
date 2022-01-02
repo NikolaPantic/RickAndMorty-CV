@@ -1,5 +1,6 @@
 import React from "react";
 import './card.scss'
+import like from './Like_Button.png'
 
 class Card extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class Card extends React.Component {
 <div className="nameandbutton">
 <h3 className="name">{this.props.name}</h3>
 
-<button onClick={()=> this.props.selectSingle(this.props.id)}>Like</button>
+<button onClick={()=> this.props.selectSingle(this.props.id)}>Like <img src={like} alt="like" /></button>
 </div>
             </div>
          );
