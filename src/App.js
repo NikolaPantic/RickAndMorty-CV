@@ -52,11 +52,12 @@ this.setState({selectedChar:x})
 
 
 changePage(x){
-if(this.state.currentPage>1 && this.state.currentPage<=41)
+if(this.state.currentPage>1 && this.state.currentPage<42)
 this.setState({currentPage: this.state.currentPage+ x})
-else if(this.state.currentPage===1)
-this.setState({currentPage:1})
-else this.setState({currentPage:42})
+else if(this.state.currentPage===1 && x>0)
+this.setState({currentPage: this.state.currentPage+ x})
+else if(this.state.currentPage===42 && x<0)
+ this.setState({currentPage: this.state.currentPage+ x})
 }
 
 
