@@ -1,40 +1,47 @@
+.singlepage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("./658977.png");
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
 
-.singlepage{
-
-display:flex;
-justify-content: center;
-align-items: flex-start;
-background-image: url('./658977.png');
-background-position:bottom;
-background-size: cover;
-height:100vh;
-
-.gohomepickle{
-position: absolute;
-left:0;
-bottom: 0;
-background-image: url('./jing.fm-pickle-clipart-black-and-859549.png');
-background-size:contain;
-background-repeat: no-repeat;
-background-position-x: right;
-background-position-y: top;
-width:100px;
-height: 120px;
+  .gohomepickle {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("./jing.fm-pickle-clipart-black-and-859549.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    width: 100px;
+    height: 120px;
+    animation: pulsate 1s infinite;
+  }
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media only screen and(max-width:768px) {
-    .singlepage{
-
-
-.gohomepickle{
-width:75px;
-height:90px;
-
-}
-
-
+  .singlepage {
+    .gohomepickle {
+      width: 75px;
+      height: 90px;
     }
-    
+  }
 }
